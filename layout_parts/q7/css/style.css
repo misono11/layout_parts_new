@@ -1,5 +1,98 @@
 @charset "UTF-8";
 
-/* 回答はここに書いてね */
+/* 回答はここに書いてね*/
+
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.boxa  {
+  float:left;
+  width:205px;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.clearfix .boxa:first-child {
+  margin-left:0;
+}
+
+
+
+.table-box {
+display:table;
+}
+
+.table-text {
+  width:205px;
+  display:table-cell;
+  vertical-align: middle;
+  padding-left:50px;
+}
+
+.table-box .table-text:first-child {
+  padding-left:0;
+}
+
+
+
+.inline-block-box {
+  font-size: 0;
+}
+
+.inline-block {
+  width:205px;
+  display:inline-block;
+  vertical-align: middle;
+  font-size:16px;
+  margin-left:50px;
+}
+
+.inline-block-box .inline-block:first-child {
+  margin-left:0;
+}
+
+
+
+.flex-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.flex-text {
+  width:205px;
+  font-size: 16px;
+}
+
+
+
+.margin {
+  width:100%;
+  font-size:0;
+  box-sizing: border-box;
+}
+
+.margin-box1{
+  width:300px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.margin-box2 {
+  width:100%;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:-300px;
+  padding-left:350px;
+  box-sizing: border-box;
+}
+
+
 
 /* 回答はここに書いてね */

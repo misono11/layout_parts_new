@@ -1,5 +1,308 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.small-box {
+  font-size:16px;
+  line-height: 26px;
+}
+
+.small {
+  padding:0 15px;
+  border-radius: 3px;
+}
+
+.middle-box {
+  font-size:20px;
+  line-height: 32px;
+}
+
+.middle {
+  padding:0 20px;
+  border-radius: 5px;
+}
+
+.large-box {
+  font-size:24px;
+  line-height: 38px;
+}
+
+.large {
+  padding:0 25px;
+  border-radius: 7px;
+}
+
+.common {
+  background-color: #00bcd4;
+  color:#fff;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.error {
+  background-color: #ff4081;
+  color:#fff;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: #e5e5e5;
+  color:#fff;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.shadow {
+  color: #222;
+  display:inline-block;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12),
+              0 1px 4px rgba(0,0,0,.12);
+  cursor: pointer;
+}
+
+
+
+
+
+.q8-box {
+  background-color: #ECF1F2;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+
+
+.q8-title-box {
+  width:700px;
+  position: relative;
+}
+
+.q8-title-text {
+  background-color: #ECF1F2;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 10px;
+
+}
+
+.q8-title-box:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  content: "";
+}
+
+
+
+.left {
+  float:left;
+  width:300px;
+}
+
+
+
+.item-title {
+  float: left;
+  width: 100px;
+  line-height: 25px;
+  text-align: right;
+}
+
+
+.kome {
+  color: #F00;
+}
+
+
+.input {
+  width: 180px;
+  background-color: #FFF;
+  border-radius: 3px;
+  float:right;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  border:none;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 7px #00BCD4;
+}
+
+
+
+.q8-radio {
+  position: relative;
+  padding:3px 3px 3px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox {
+  display:none;
+}
+
+.content-box {
+  width:180px;
+  float: right;
+}
+
+.radio-text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: '';
+}
+
+.checkbox:checked + .radio-text:after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: '';
+}
+
+.select {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-input {
+  position:relative;
+}
+
+.select-input::after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
+}
+
+.q8-checkbox {
+  float:right;
+}
+
+.square-checkbox{
+  display: none;
+}
+
+.q8-square-checkbox {
+  position: relative;
+}
+
+.square-checkbox-text:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: -9px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  content: '';
+}
+
+.square-checkbox-text {
+  padding-left: 24px;
+}
+
+.square-checkbox:checked + .square-checkbox-text:after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00BCD4;
+  border-bottom: 3px solid #00BCD4;
+  transform: rotate(45deg);
+  content: '';
+}
+
+.bottom {
+  float:right;
+}
+
+.right {
+  float: right;
+  width:380px;
+  background-color: #ECF1F2;
+}
+
+.message {
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  font-size: 12px;
+  box-sizing: border-box;
+  border:none;
+  outline: none;
+  resize: none;
+}
+
+.message:focus {
+  box-shadow: 0 0 7px #00BCD4;
+}
+
+.clearfix {
+  margin-top:20px;
+}
+
+.left .clearfix:first-child {
+  margin-top:0;
+}
+
+.bottom {
+  background-color: #00BCD4;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFF;
+  padding:0 10px;
+  cursor: pointer;
+  border:none;
+}
+
+.bottom:active {
+  background-color: #FFF;
+  color: #00BCD4;
+  border:none;
+}
+
+.clearfix::after{
+display:block;
+content:"";
+clear:both;
+}
 
 /* 回答はここに書いてね */
