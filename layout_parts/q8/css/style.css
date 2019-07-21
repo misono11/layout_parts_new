@@ -4,65 +4,59 @@
 .small-box {
   font-size:16px;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .small {
   padding:0 15px;
   border-radius: 3px;
+  display:inline-block;
 }
 
 .middle-box {
   font-size:20px;
   line-height: 32px;
+  cursor: pointer;
 }
 
 .middle {
   padding:0 20px;
   border-radius: 5px;
+  display:inline-block;
 }
 
 .large-box {
   font-size:24px;
   line-height: 38px;
+  cursor: pointer;
 }
 
 .large {
   padding:0 25px;
   border-radius: 7px;
+  display:inline-block;
 }
 
 .common {
   background-color: #00bcd4;
   color:#fff;
-  display:inline-block;
-  cursor: pointer;
 }
 
 .error {
   background-color: #ff4081;
   color:#fff;
-  display:inline-block;
-  cursor: pointer;
 }
 
 .disabled {
   background-color: #e5e5e5;
   color:#fff;
-  display:inline-block;
-  cursor: pointer;
 }
 
 .shadow {
   color: #222;
-  display:inline-block;
   box-shadow: 0 1px 6px rgba(0,0,0,.12),
-              0 1px 4px rgba(0,0,0,.12);
-  cursor: pointer;
+              0 1px 4px rgba(0,0,0,.12)
 }
-
-
-
-
 
 .q8-box {
   background-color: #ECF1F2;
@@ -72,11 +66,10 @@
   position: relative;
 }
 
-
-
-.q8-title-box {
+.q8-title-content {
   width:700px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .q8-title-text {
@@ -86,10 +79,9 @@
   font-weight: bold;
   display: inline-block;
   padding-right: 10px;
-
 }
 
-.q8-title-box:before {
+.q8-title-content:before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -99,14 +91,14 @@
   content: "";
 }
 
-
-
 .left {
   float:left;
   width:300px;
 }
 
-
+.item-box {
+  margin-bottom: 20px;
+}
 
 .item-title {
   float: left;
@@ -115,11 +107,9 @@
   text-align: right;
 }
 
-
 .kome {
   color: #F00;
 }
-
 
 .input {
   width: 180px;
@@ -129,6 +119,10 @@
   font-size: 12px;
   line-height: 12px;
   padding: 5px;
+  box-sizing: border-box;
+}
+
+.initial {
   border:none;
   box-sizing: border-box;
   outline: none;
@@ -138,8 +132,6 @@
 .input:focus {
   box-shadow: 0 0 7px #00BCD4;
 }
-
-
 
 .q8-radio {
   position: relative;
@@ -186,6 +178,7 @@
   position: relative;
   cursor: pointer;
   outline: none;
+  resize: none;
 }
 
 .select-input {
@@ -247,10 +240,6 @@
   content: '';
 }
 
-.bottom {
-  float:right;
-}
-
 .right {
   float: right;
   width:380px;
@@ -265,24 +254,22 @@
   background-color: #FFF;
   font-size: 12px;
   box-sizing: border-box;
-  border:none;
-  outline: none;
-  resize: none;
 }
 
 .message:focus {
   box-shadow: 0 0 7px #00BCD4;
 }
 
-.clearfix {
+.main-content {
   margin-top:20px;
 }
 
-.left .clearfix:first-child {
+.left .main-content:first-child {
   margin-top:0;
 }
 
 .bottom {
+  float:right;
   background-color: #00BCD4;
   border-radius: 3px;
   font-size: 16px;
@@ -290,7 +277,6 @@
   color: #FFF;
   padding:0 10px;
   cursor: pointer;
-  border:none;
 }
 
 .bottom:active {

@@ -1,17 +1,20 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
 .gray {
+  padding:20px;
+}
+
+.content-box {
   display:table;
   width:100%;
   text-align: center;
-  padding:20px;
+  margin-top: 20px;
   box-sizing:border-box;
 }
 
-.q4 .gray:first-child{
-  padding-bottom:0;
+.gray .content-box:first-child{
+  margin-top:0;
 }
 
 .content {
@@ -21,7 +24,8 @@
 
 .orange {
   background-color: #fdc8b8;
-  width:60px;
+  width:100px;
+  box-sizing: border-box;
 }
 
 .porpul {
@@ -30,7 +34,8 @@
 
 .bule {
   background-color: #b6d8ed;
-  width:60px;
+  width:100px;
+  box-sizing: border-box;
 }
 
 .yellow {
@@ -43,6 +48,7 @@
 
 .green {
   background-color: #8fdcad;
-  width:460px;
+  width:500px;
+  box-sizing: border-box;
 }
 /* 回答はここに書いてね */

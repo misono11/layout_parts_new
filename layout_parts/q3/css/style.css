@@ -29,11 +29,8 @@
   border-bottom:dashed #000 2px;
 }
 
-.q3-content tr:nth-child(3) {
+.q3-content tr:nth-child(odd) {
   background-color: #ecf1f2;
 }
 
-.q3-content tr:nth-child(5){
-  background-color: #ecf1f2;
-}
 /* 回答はここに書いてね */
